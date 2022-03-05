@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import * as React from 'react';
+import * as mui from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
+import Home from './container/homePage'
+import About from './container/aboutPage';
+import { Routes, Route, Link, } from "react-router-dom";
+import Nav from './component/Nav'
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Nav>
+
+
+        <Routes>
+          <Route path='/' element={<Home></Home>} />
+          <Route path='about' element={<About></About>} />
+        </Routes>
+      </Nav>
+
     </div>
   );
 }
