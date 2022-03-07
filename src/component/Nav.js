@@ -18,7 +18,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import InfoIcon from '@mui/icons-material/Info';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import Home from '../container/homePage';
 
 const drawerWidth = 240;
 
