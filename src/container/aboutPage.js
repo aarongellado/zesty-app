@@ -21,6 +21,7 @@ function About() {
   return (
     <div>
       {isSuccess && <div dangerouslySetInnerHTML={{ __html: textContent.data[0].content.page_content }} />}
+      {!isSuccess && <span>{error}</span>}
     </div>
   );
 }
